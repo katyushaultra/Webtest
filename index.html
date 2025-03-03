@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Portofolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <h2>Menu</h2>
+        <a href="https://shop1.com" target="_blank">Shop 1</a>
+        <a href="https://shop2.com" target="_blank">Shop 2</a>
+        <a href="https://shop3.com" target="_blank">Shop 3</a>
+    </div>
+
+    <!-- Button Menu -->
+    <button class="menu-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+    <!-- Profil -->
+    <div class="profile">
+        <img src="https://your-profile-image-link.com" alt="Profil">
+        <h2><a href="https://your-profile-link.com" target="_blank">Nama Toko</a></h2>
+    </div>
+
+    <!-- Text Berjalan RGB -->
+    <marquee class="marquee">Selamat Datang di Toko Kami - Promo Menarik Setiap Hari!</marquee>
+
+    <!-- Produk -->
+    <div class="product-container">
+        <div class="product available">
+            <img src="https://your-product-image.com" alt="Produk 1">
+            <h3>Produk 1</h3>
+            <p>Rp 100.000</p>
+            <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20beli%20Produk%201" class="buy-btn">Beli</a>
+        </div>
+
+        <div class="product unavailable">
+            <img src="https://your-product-image.com" alt="Produk 2">
+            <h3>Produk 2 (Tidak Tersedia)</h3>
+            <p>Rp 150.000</p>
+            <button class="buy-btn disabled" disabled>Habis</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

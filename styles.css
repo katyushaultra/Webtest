@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://your-background-image-link.com') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    transition: 0.3s;
+}
+#sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+}
+#sidebar a:hover {
+    color: yellow;
+}
+.close-btn {
+    background: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}
+.menu-btn {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Profil */
+.profile {
+    text-align: center;
+    margin-top: 50px;
+}
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.profile h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Marquee */
+.marquee {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: linear-gradient(90deg, red, green, blue, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rgbText 5s infinite linear;
+}
+@keyframes rgbText {
+    0% { color: red; }
+    25% { color: green; }
+    50% { color: blue; }
+    75% { color: yellow; }
+    100% { color: red; }
+}
+
+/* Produk */
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.product {
+    width: 200px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+.buy-btn {
+    display: block;
+    background: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.buy-btn.disabled {
+    background: gray;
+    cursor: not-allowed;
+}
